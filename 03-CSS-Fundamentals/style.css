@@ -1,10 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #444;
+  font-family: sans-serif;
+
+  border-top: 1px solid #1098ad;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  /* padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+nav {
+  font-style: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
 h1,
 h2,
 h3,
 h4,
 p,
 li {
-  font-family: sans-serif;
+  /* color: #444; */
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
 }
 
 h1 {
@@ -15,10 +53,13 @@ h1 {
 
 h2 {
   font-style: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-style: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -30,10 +71,22 @@ h4 {
 p {
   font-style: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+il {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   font-family: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 /* footer p {
@@ -61,3 +114,72 @@ related-author {
 .related {
   list-style: none;
 }
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+/* li:nth-child(even) {
+  color: red;
+} */
+
+/* Misconception: this won't work! */
+/* article p:first-child {
+  color: red;
+}
+
+/* Styling links */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #777;
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* LVHA */
+
+/* Resolving conflicts */
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important;
+} */
